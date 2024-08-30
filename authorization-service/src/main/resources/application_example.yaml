@@ -1,0 +1,26 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          keycloak:
+            client-id: client_id
+            client-secret: client_secret
+            scope: s1, s2
+            authorization-grant-type: type
+        provider:
+          keycloak:
+            issuer-uri: uri
+            user-name-attribute: att
+keycloak:
+  server-url: uri
+  realm: realm
+  username: uname
+  password: pass
+
+server:
+  port: port
+
+logging:
+  level:
+    web: trace
